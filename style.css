@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+height: 100%;
+width: 100%;
+font-family: sans-serif;
+}
+
+.wrapper{
+height: 100%;
+width: 100%;
+}
+ ul{
+    list-style: none;
+ }
+ a{
+    text-decoration: none;
+ }
+
+ .header-nav{
+    width: 100%;
+    background: #a387bc;
+    position: fixed;
+    top: 0;
+ }
+
+ .nav{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    color: #1e242b;
+    font-weight: lighter;
+ }
+
+ .navItems{
+display: flex;
+gap: 6rem;
+align-items: center;
+font-size: 1.3rem;
+ }
+ .navItems .items .links{
+    color: black;
+    text-decoration: none;
+    
+ }
+
+ .navItems .items .links:hover{
+    color: white;
+    transition: 0.6s;
+    cursor: pointer;
+    
+ }
+
+ .logo{
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: black;
+ }
+ .nav .navItems .closeMenu , .icons i{
+	font-size: 2rem;
+	display: none;
+	cursor: pointer;
+ }
+ .nav .navItems .icons i:hover{
+	color: white;
+	transition: 0.6s;
+	cursor: pointer;
+ }
+ .fa-brands fa-facebook{
+	color: #1e242b;
+ }
+ .fa-brands fa-youtube{
+	color: #1e242b;
+ }
+ .fa-brands fa-twitter{
+	color: #1e242b;
+ }
+ .fa-brands fa-github{
+	color: #1e242b;
+ }
+
+ .nav .openMenu{
+	display: none;
+ }
+ 
+ .img-container img {
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.hero {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 5rem;
+	background-color: #1e242b;
+	padding-left: 7rem;
+	padding-right: 7rem;
+}
+
+.hero .content-one .text-1 {
+	color: #d19efd;
+	margin-bottom: 4rem;
+}
+
+.hero .content-one .text-2 {
+	color: white;
+	font-size: 2rem;
+	margin-bottom: 3rem;
+}
+
+.learn-more {
+	background-color: #d19efd;
+	padding: 10px;
+	display: inline-block;
+	color: black;
+	border-radius: 5%;
+	font-weight: bold;
+	cursor: pointer;
+	
+}
+
+.learn-more:hover {
+	background-color: white;
+	color: violet;
+	transition: 0.5s;
+}
+
+.products {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 5rem 7rem;
+	align-items: center;
+	background-color: #1e242b;
+}
+
+.products-content-one .learn-more {
+	background-color: #000000;
+}
+
+.card-container {
+	display: flex;
+	gap: 1rem;
+	margin-top: 4rem;
+}
+
+.card {
+	background-color: transparent;
+	display: flex;
+	flex-direction: column;
+	padding: 3rem 1rem;
+	gap: 2rem;
+	text-align: center;
+	align-items: center;
+	border: 5px solid #000000;
+	border-radius: 30px;
+	box-shadow: 2px 10px 45px 14px rgba(0, 0, 0, 0.31);
+	-webkit-box-shadow: 2px 10px 45px 14px rgba(0, 0, 0, 0.31);
+	-moz-box-shadow: 2px 10px 45px 14px rgba(0, 0, 0, 0.31);
+}
+
+.card:hover {
+	background-color: #a387bc;
+	transition: 0.6s;
+	border: rgb(250, 159, 250);
+}
+
+.read-more {
+	background-color: #d19efd;
+	padding: 1rem;
+	display: inline-block;
+	color: white;
+	margin-top: 1rem;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 50px;
+	width: 12rem;
+}
+
+.read-more:hover {
+	color: #000000;
+	transition: 0.5s;
+}
+
+.card i {
+	font-size: 3rem;
+	color:#a387bc;
+}
+
+.card:hover i {
+	color: #000000;
+}
+
+.card:hover h1 {
+	color: #000000;
+}
+
+.card:hover p {
+	color: white;
+}
+
+.products-content-one {
+	align-self: flex-start;
+}
+
+.products .content-one .text-1 {
+	color: white;
+	font-size: 30px;
+	margin-bottom: 30%;
+}
+
+.card h1 {
+	font-size: 2.5rem;
+	color: white;
+}
+
+.card p {
+	font-weight: bold;
+	color: white;
+}
+
+.footer {
+	background-color: #a387bc;
+	width: 100%;
+	min-height: 20rem;
+	display: flex;
+	justify-content: space-around;
+	padding-top: 4rem;
+	flex-wrap: wrap;
+}
+
+.first h1 {
+	font-size: 3rem;
+	color: rgb(247, 181, 247);
+}
+
+.first h2 {
+	margin-bottom: 1rem;
+}
+
+.second {
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+	text-align: center;
+}
+
+.second ul {
+	font-size: 1.3rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.third {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.third form {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.third form input {
+	padding: 0.5rem;
+	width: 15rem;
+}
+
+.third form button {
+	width: 6rem;
+	border: none;
+	padding: 0.5rem;
+	font-size: 1rem;
+	background-color: rgb(242, 173, 242);
+}
+
+.third .socials {
+	display: flex;
+	font-size: 2rem;
+	gap: 1rem;
+}
+
+.copyright {
+	font-size: 1.5rem;
+}
+
+.navItems.show-list {
+	transform: translateX(0);
+}
+
+
+@media screen and (max-width: 1300px) {
+	.card-container {
+		flex-direction: column;
+		width: 75%;
+	}
+
+	.products .content-one {
+		align-self: center;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	.card-container {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.hero {
+		flex-direction: column;
+		padding-top: 10rem;
+	}
+
+	.footer {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		gap: 3rem;
+		padding-bottom: 6rem;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.card-container {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.nav {
+		position: relative;
+		padding-left: 0;
+	}
+
+	.navItems {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 0;
+		background-color: #8b72a0;
+		opacity: 0.8;
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 100;
+		width: 40%;
+		height: 90vh;
+		transition: top 1s ease;
+		box-shadow: 0 0 30px black;
+		display: none;
+	}
+	.nav .navItems .closeMenu{
+		
+		display: block;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+
+	}
+	.nav .navItems .icons i{
+		display: block;
+		font-size: 20px;
+		display: inline;
+		gap: 1rem;
+		
+		
+	}
+	.nav .openMenu{
+		display: block;
+		font-size: 30px;
+	}
+	
+	.navItems .items{
+		flex-direction: column;
+		align-items: center;
+		padding: 20px;
+	}
+
+	.navItems .items {
+		padding-block: 1rem;
+	}
+
+	.navItems li {
+		padding: 0.5rem;
+		width: 100%;
+		text-align: center;
+	}
+
+	.logo {
+		align-self: flex-start;
+		padding-left: 2rem;
+	}
+
+	.products {
+		padding: 5rem 3rem;
+	}
+
+	.hero {
+		padding-left: 5rem;
+		padding-right: 5rem;
+	}
+}
+@media screen and (max-width: 750px;){
+	.navItems{
+		width: 100%;
+		max-height: 0;
+		overflow: hidden;
+	}
+	.nav .openMenu{
+		display: inline-flex;
+	}
+	.items{
+		flex-direction: column;
+		align-items: center;
+		padding: 20px;
+	}
+}
